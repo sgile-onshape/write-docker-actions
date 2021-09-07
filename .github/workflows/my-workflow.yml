@@ -1,4 +1,4 @@
-name: Docker Actions
+name: "Docker Actions"
 
 on:
   pull_request:
@@ -11,10 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: hello-action
+      - name: "hello-action"
         uses: ./.github/actions/hello-world
         with:
           firstGreeting: "Learning Lab User Me"
 
-      - name: meow
+      - name: "meow"
         uses: ./.github/actions/cat-facts
